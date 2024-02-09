@@ -15,6 +15,12 @@
                 <li class='{{ Request::is('dashboard-general-dashboard') ? 'active' : '' }}'>
                     <a class="nav-link" href="{{ route('users.index') }}">Users</a>
                 </li>
+                <li class='{{ Request::is('dashboard-general-dashboard') ? 'active' : '' }}'>
+                    <a class="nav-link" href="{{ route('products.index') }}">Products</a>
+                </li>
+                <li class='{{ Request::is('dashboard-general-dashboard') ? 'active' : '' }}'>
+                    <a class="nav-link" href="{{ route('categories.index') }}">Category</a>
+                </li>
             </ul>
         </li>
 </div>
