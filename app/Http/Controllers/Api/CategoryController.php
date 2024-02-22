@@ -11,8 +11,8 @@ class CategoryController extends Controller
     //index api
     public function index()
     {
-        // $category = Category::all();
-        $category = Category::paginate(10);
+        $category = Category::all();
+        // $category = Category::paginate(10);
         return response()->json([
             'status' => 'success',
             'data' => $category
